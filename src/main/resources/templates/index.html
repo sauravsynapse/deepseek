@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="ISO-8859-1">
+        <title>DeepSeek</title>
+    </head>
+    <body>
+        Ask Question:<br><br>
+        <form action="ask" method="post">
+            <label>Ask your question?</label><br>
+            <input type="text" id="question" name="question" th:value="${question}" required>
+            <br>
+            <button type="Submit">Ask</button><br><br>
+        </form>
+
+        <label>Answer:</label><br>
+        <textarea rows="30" cols="100" name="answer" th:text="${answer}"></textarea><br>
+        <br>
+    </body>
+</html>
