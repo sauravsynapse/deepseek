@@ -41,5 +41,6 @@ public class WebController {
         model.addAttribute("answer", answer.substring(0,answer.length()-1));
 
         return "index";
+
     }
 }
